@@ -1,0 +1,53 @@
+2021-09-14 02:10:54.995 +06:00 [INF] Application Starting up
+2021-09-14 02:11:52.904 +06:00 [INF] User created a new account with password.
+2021-09-14 02:12:30.104 +06:00 [INF] User logged out.
+2021-09-14 02:12:55.729 +06:00 [INF] User logged in.
+2021-09-14 02:12:57.988 +06:00 [INF] User logged out.
+2021-09-14 02:36:03.636 +06:00 [INF] Application Starting up
+2021-09-14 02:38:08.151 +06:00 [INF] User created a new account with password.
+2021-09-14 02:38:52.669 +06:00 [INF] Application Starting up
+2021-09-14 02:40:36.354 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-14 02:40:36.406 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-14 13:43:55.621 +06:00 [INF] Application Starting up
+2021-09-14 13:45:17.588 +06:00 [INF] User created a new account with password.
+2021-09-14 13:45:18.982 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at MimeKit.MailboxAddress..ctor(Encoding encoding, String name, String address)
+   at MimeKit.MailboxAddress..ctor(String name, String address)
+   at DataImporter.Common.Utilities.EmailService.SendEmail(String receiver, String subject, String body) in G:\assignment-3\DataImporter\DataImporter.Common\Utilities\EmailService.cs:line 45
+   at DataImporter.Controllers.AccountController.Register(RegisterModel model, String returnUrl) in G:\assignment-3\DataImporter\DataImporter\Controllers\AccountController.cs:line 99
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-14 13:53:30.061 +06:00 [INF] Application Starting up
+2021-09-14 14:10:39.723 +06:00 [INF] Application Starting up
+2021-09-14 14:13:30.997 +06:00 [INF] Application Starting up
+2021-09-14 14:18:38.771 +06:00 [INF] Application Starting up
+2021-09-14 14:19:59.478 +06:00 [INF] User created a new account with password.
+2021-09-14 14:23:36.013 +06:00 [INF] Application Starting up
+2021-09-14 14:24:07.408 +06:00 [INF] Application Starting up
+2021-09-14 14:24:13.143 +06:00 [INF] User logged out.
+2021-09-14 14:24:57.153 +06:00 [INF] User created a new account with password.
+2021-09-14 14:26:28.935 +06:00 [INF] User logged out.
+2021-09-14 15:55:56.115 +06:00 [INF] Application Starting up
+2021-09-14 20:07:09.749 +06:00 [INF] Application Starting up
+2021-09-14 20:13:47.820 +06:00 [INF] User created a new account with password.
+2021-09-14 21:43:24.772 +06:00 [INF] Application Starting up
+2021-09-14 21:44:25.070 +06:00 [INF] User created a new account with password.
+2021-09-14 21:45:13.277 +06:00 [INF] User logged out.
+2021-09-14 23:38:09.862 +06:00 [INF] Application Starting up
+2021-09-14 23:39:35.354 +06:00 [INF] User logged in.
+2021-09-14 23:40:12.349 +06:00 [INF] User logged out.

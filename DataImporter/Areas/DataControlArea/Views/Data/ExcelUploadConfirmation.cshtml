@@ -1,0 +1,102 @@
+﻿@model ExcelManageModel
+@{
+    ViewData["Title"] = "ExcelUploadConfirmation";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Are You Sure You Want To Upload The Following File ??</h3>
+                    </div>
+                    @*@if (Model.count == 1)
+                    {
+                        <div class="card-header">
+                            <h3 class="card-title">sorry can't upload the file!!! file already exixt </h3>
+                        </div>
+                    }*@
+                    @*<input type="hidden" asp-for="GroupId" />*@
+                    <div>
+                        <table class="table table-bordered border-primary table">
+                            <thead>
+                                @for (var i = 0; i < 1; i++)
+                                {
+                                    <tr class="table-warning">
+                                        @for (var j = 0; j < Model.ExcelData[i].Count; j++)
+                                        {
+                                            <td style="font-weight:500">
+                                                @Model.ExcelData[i][j]
+                                            </td>
+                                        }
+                                    </tr>
+                                }
+                            </thead>
+                            <tbody>
+                                @for (var i = 1; i < Model.ExcelData.Count; i++)
+                                {
+                                    <tr>
+                                        @for (var j = 0; j < Model.ExcelData[i].Count; j++)
+                                        {
+                                            <td>
+                                                @Model.ExcelData[i][j]
+                                            </td>
+                                        }
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <form method="post">
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-info">YES</button>
+                            <a asp-action="ExcelDelete" asp-controller="Data"
+                               class="btn btn-default float-right">NO</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    @*<table class="table">
+                <thead id="demo">
+                    @for(var i=0; i < Model.ExcelData.Count; i++)
+                    {
+                        <tr>
+                            @for (var j = 0; j < Model.ExcelData[i].Count; j++)
+                            {
+                                <td>
+                                    @Model.ExcelData[i][j]
+                                </td>
+                            }
+                        </tr>
+                    }
+                </thead>
+        </table>*@
+
+    @*@section Scripts
+        {
+            <script>
+                var row;
+                var col;
+                var data = '';
+                for (row = 1; row <=; row++) {
+                     //document.getElementById("demo").write("<tr>")
+                    data = data + '<tr>';
+                     for (col = 1; col <= 5; col++) {
+                         //document.getElementById("demo").write("<td>R" + row + "<br>C" + col + "</td>")
+                         data = data + '<td>' + col + '</td>';
+
+                    }
+                    //document.getElementById("demo").write("</tr>")
+                    data = data + '</tr>';
+                }
+                document.getElementById("demo").innerHTML = data;
+            </script>
+        }*@

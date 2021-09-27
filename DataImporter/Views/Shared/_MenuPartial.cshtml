@@ -1,0 +1,68 @@
+﻿<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+    with font-awesome or any other icon font library -->
+        <li class="nav-item">
+            <a asp-area="" asp-action="HomePage" asp-controller="Home" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                    Home
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a asp-action="Groups" asp-controller="Data" asp-area="DataControlArea" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Groups
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a asp-action="CreateGroups" asp-controller="Data" asp-area="DataControlArea" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Create Group
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a asp-action="GetGroupsFileData" asp-controller="Data" asp-area="DataControlArea" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Contacts
+                </p>
+            </a>
+        </li>
+
+        @*<li class="nav-item">
+            <a asp-action="UploadContacts" asp-controller="Data" asp-area="DataControlArea" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Upload Contacts
+                </p>
+            </a>
+        </li>*@
+
+        <li class="nav-item">
+            <a asp-action="GetImportedFiles" asp-controller="Data" asp-area="DataControlArea" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Imports
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a asp-action="GetExportedFiles" asp-controller="Data" asp-area="DataControlArea" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Exports
+                </p>
+            </a>
+        </li>
+    </ul>
+</nav>

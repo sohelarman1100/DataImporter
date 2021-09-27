@@ -1,0 +1,77 @@
+﻿@model FileUploadModel
+@{
+    ViewData["Title"] = "UploadContacts";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Upload Your Selected File</h1>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Upload File</h3>
+                    </div>
+                    <form class="form-horizontal" method="post" asp-controller="Data" asp-action="UploadContacts"
+                          asp-antiforgery="true"  enctype="multipart/form-data">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <input type="hidden" asp-for="GroupId" />
+                        <div class="card-body">
+                            <div class="form-group col">
+                                <label asp-for="UploadedFile" class="col-sm-2 col-form-label">Upload Excel</label>
+                                <div class="col-sm-10">
+                                    <input type="file" asp-for="UploadedFile" id="excel" placeholder="Excel File">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+
+                            <a asp-controller="Data" asp-action="ImportContacts"
+                               class="btn btn-default float-right">Cancle</a>
+
+                            <button type="submit" class="btn btn-info">Next</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<table class="table">
+    <thead id="demo">
+
+    </thead>
+</table>*@
+
+@*@section Scripts
+{
+    <script>
+        var row;
+        var col;
+        var data='';
+        for (row = 1; row <= 4; row++) {
+             //document.getElementById("demo").write("<tr>")
+            data = data + '<tr>';
+             for (col = 1; col <= 5; col++) {
+                 //document.getElementById("demo").write("<td>R" + row + "<br>C" + col + "</td>")
+                 data = data + '<td>' + col + '</td>';
+                
+            }
+            //document.getElementById("demo").write("</tr>")
+            data = data + '</tr>';
+        }
+        document.getElementById("demo").innerHTML = data;
+    </script>
+}*@

@@ -1,0 +1,44 @@
+﻿@model CreateGroupModel
+@{
+    ViewData["Title"] = "CreateGroups";
+}
+@*@section Styles
+{
+    <link href="~/css/createGrpStyl.css" rel="stylesheet" />
+}*@
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Create A New Group</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form class="form-horizontal" method="post" asp-controller="Data"
+                          asp-action="CreateGroups" asp-antiforgery="true">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label asp-for="GroupName" class="col-sm-2 col-form-label">Group Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" asp-for="GroupName"
+                                           id="name" placeholder="group name">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-info">Create</button>
+                            <a asp-action="HomePage" asp-controller="Home" asp-area=""
+                               class="btn btn-default float-right">Cancel</a>
+                        </div>
+                        <!-- /.card-footer -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

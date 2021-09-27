@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "CreatedGroups";
+}
+
+@section Styles
+{
+    <link href="~/css/cstmStyleGetGroups.css" rel="stylesheet" />
+}
+
+<section class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="row cstmStyl">
+                    <div class="col-sm-2" style="font-weight:600">
+                        Group
+                    </div>
+                    <div class="col-sm-2 colMrgin" style="font-weight:600">
+                        Date From
+                    </div>
+                    <div class="col-sm-2 colMrgin" style="font-weight:600">
+                        Date To
+                    </div>
+                </div>
+                <form method="post" asp-controller="" asp-action="" asp-antiforgery="true">
+                    <div class="row cstmStyl">
+                        <div class="col-sm-2">
+                            @*<input type="text" class="form-control" placeholder="group name">*@
+                            @Html.DropDownList("Mylst", ViewBag.GroupName as SelectList, "please select group")
+                        </div>
+                        <div class="col-sm-2 colMrgin">
+                            <input type="text" class="form-control" placeholder="date from">
+                        </div>
+                        <div class="col-sm-2 colMrgin">
+                            <input type="text" class="form-control" placeholder="date to">
+                        </div>
+                        <div class="btnMrgin">
+                            <button type="submit" class="btn btn-outline-secondary" style="font-weight:600">Search</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">All Available Files</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="Products" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>File Name</th>
+                                <th>Action</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+

@@ -1,0 +1,18 @@
+﻿.cstmStyl {
+    margin-top: 1%;
+}
+
+.brdrCrv {
+    border: 2px solid;
+    border-radius: 7px;
+    margin-left: 4%;
+    background-color: lightgoldenrodyellow;
+}
+
+.colMrgin {
+    margin-left: 5%;
+}
+
+.btnMrgin{
+    margin-left: 31%;
+}
