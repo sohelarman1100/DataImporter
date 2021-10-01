@@ -3495,6 +3495,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "7.1.0",
+          "EPPlus": "5.7.4",
           "MailKit": "2.15.0",
           "Microsoft.Extensions.Options": "5.0.0"
         },
@@ -11227,11 +11228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter\\DataImporter.csproj",
+      "projectUniqueName": "G:\\My DotNet Projects\\DataImporter\\DataImporter\\DataImporter.csproj",
       "projectName": "DataImporter",
-      "projectPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter\\DataImporter.csproj",
+      "projectPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter\\DataImporter.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter\\obj\\",
+      "outputPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11248,14 +11249,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj": {
-              "projectPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj"
+            "G:\\My DotNet Projects\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj": {
+              "projectPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj"
             },
-            "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Functionality\\DataImporter.Functionality.csproj": {
-              "projectPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Functionality\\DataImporter.Functionality.csproj"
+            "G:\\My DotNet Projects\\DataImporter\\DataImporter.Functionality\\DataImporter.Functionality.csproj": {
+              "projectPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Functionality\\DataImporter.Functionality.csproj"
             },
-            "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Membership\\DataImporter.Membership.csproj": {
-              "projectPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Membership\\DataImporter.Membership.csproj"
+            "G:\\My DotNet Projects\\DataImporter\\DataImporter.Membership\\DataImporter.Membership.csproj": {
+              "projectPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Membership\\DataImporter.Membership.csproj"
             }
           }
         }

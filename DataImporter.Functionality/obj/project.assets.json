@@ -6246,11 +6246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Functionality\\DataImporter.Functionality.csproj",
+      "projectUniqueName": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Functionality\\DataImporter.Functionality.csproj",
       "projectName": "DataImporter.Functionality",
-      "projectPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Functionality\\DataImporter.Functionality.csproj",
+      "projectPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Functionality\\DataImporter.Functionality.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Functionality\\obj\\",
+      "outputPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Functionality\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6267,11 +6267,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Data\\DataImporter.Data.csproj": {
-              "projectPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Data\\DataImporter.Data.csproj"
+            "G:\\My DotNet Projects\\DataImporter\\DataImporter.Data\\DataImporter.Data.csproj": {
+              "projectPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Data\\DataImporter.Data.csproj"
             },
-            "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Membership\\DataImporter.Membership.csproj": {
-              "projectPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Membership\\DataImporter.Membership.csproj"
+            "G:\\My DotNet Projects\\DataImporter\\DataImporter.Membership\\DataImporter.Membership.csproj": {
+              "projectPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Membership\\DataImporter.Membership.csproj"
             }
           }
         }

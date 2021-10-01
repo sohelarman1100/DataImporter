@@ -18,6 +18,7 @@ namespace DataImporter.Data
         int GetCount(Expression<Func<TEntity, bool>> filter = null);
         IList<TEntity> Get(Expression<Func<TEntity, bool>> filter, string includeProperties = "");
         IList<TEntity> Get(Expression<Func<TEntity, bool>> filter);
+        TEntity GetFirstMatchingRecord(Expression<Func<TEntity, bool>> filter);
         IList<TEntity> GetAll();
         TEntity GetById(TKey id);
         (IList<TEntity> data, int total, int totalDisplay) Get(

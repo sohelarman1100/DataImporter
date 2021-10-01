@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj": {}
+    "G:\\My DotNet Projects\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj": {}
   },
   "projects": {
-    "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj": {
+    "G:\\My DotNet Projects\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj",
+        "projectUniqueName": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj",
         "projectName": "DataImporter.Common",
-        "projectPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj",
+        "projectPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "G:\\AspDotNetExam-Assignment\\DataImporter\\DataImporter.Common\\obj\\",
+        "outputPath": "G:\\My DotNet Projects\\DataImporter\\DataImporter.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[7.1.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[5.7.4, )"
             },
             "MailKit": {
               "target": "Package",

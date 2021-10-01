@@ -100,6 +100,18 @@ namespace DataImporter.Data
             return query.ToList();
         }
 
+        public virtual TEntity GetFirstMatchingRecord(Expression<Func<TEntity, bool>> filter)
+        {
+            IQueryable<TEntity> query = _dbSet;
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            return query.First();
+        }
+
         public virtual IList<TEntity> GetAll()
         {
             return _dbSet.ToList();

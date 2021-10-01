@@ -92,6 +92,10 @@ namespace DataImporter.Areas.DataControlArea.Models
                 if(importFileBO != null && importFileBO.Status == "Successfully Uploaded")
                 {
                     count = 1;
+
+                    var tmpfile = Path.Combine(_hostEnvironment.WebRootPath, "tempfiles", name);
+                    if (System.IO.File.Exists(tmpfile))
+                        System.IO.File.Delete(tmpfile);
                 }
                 else
                 {
@@ -117,13 +121,15 @@ namespace DataImporter.Areas.DataControlArea.Models
                     };
                     _importedFileService.CreateImportedFile(fileBO);
                     //importing data to ImportedFiles table end
+
+                    //start Moving a file from one path to another path.....same system e copy o kora jay
+                    string srcFile = file.Directory + "\\" + file.Name;
+                    string destFile = Path.Combine(wwwRootPath + "/confirmfiles/", file.Name);
+                    File.Move(srcFile, destFile);
+                    //end Moving a file from one path to another path
                 }
 
-                //start Moving a file from one path to another path.....same system e copy o kora jay
-                string srcFile = file.Directory + "\\" + file.Name;
-                string destFile = Path.Combine(wwwRootPath + "/confirmfiles/", file.Name);
-                File.Move(srcFile, destFile);
-                //end Moving a file from one path to another path
+
             }
         }
 

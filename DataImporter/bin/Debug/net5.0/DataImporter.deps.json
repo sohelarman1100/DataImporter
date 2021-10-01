@@ -2943,6 +2943,7 @@
       "DataImporter.Common/1.0.0": {
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "7.1.0",
+          "EPPlus": "5.7.4",
           "MailKit": "2.15.0",
           "Microsoft.Extensions.Options": "5.0.0"
         },

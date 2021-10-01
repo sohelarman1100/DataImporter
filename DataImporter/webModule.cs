@@ -22,7 +22,7 @@ namespace DataImporter
             builder.RegisterType<FileUploadModel>().AsSelf();
             builder.RegisterType<GetGroupModel>().AsSelf();
             builder.RegisterType<GetImportedFilesModel>().AsSelf();
-            //builder.RegisterType<CreateGroupModel>().AsSelf();
+            builder.RegisterType<DownloadFileModel>().AsSelf();
 
             base.Load(builder);
         }

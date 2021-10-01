@@ -131,6 +131,7 @@ namespace DataImporter
             //reCaptcha service
             services.Configure<ReCaptchaSettings>(Configuration.GetSection("GooglereCaptcha"));
             services.Configure<EmailSettings>(Configuration.GetSection("Smtp"));
+            services.Configure<AllPaths>(Configuration.GetSection("Paths"));
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddSingleton<IAuthorizationHandler, ViewRequirementHandler>();

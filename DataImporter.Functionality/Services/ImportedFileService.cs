@@ -107,5 +107,19 @@ namespace DataImporter.Functionality.Services
 
             return fileBO;
         }
+
+        public ImportedFileBO GetFileForMatchingGroupColumn(Guid userId, int groupId)
+        {
+            var fileEntity = _functionalityUnitOfWork.ImFiles.GetFirstMatchingRecord(x => x.UserId == userId &&
+                          x.GroupId == groupId);
+
+            if (fileEntity != null)
+            {
+                var fileBO = _mapper.Map<ImportedFileBO>(fileEntity);
+                return fileBO;
+            }
+            else
+                return null;
+        }
     }
 }
